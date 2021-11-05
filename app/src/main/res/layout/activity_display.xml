@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".DisplayActivity">
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Product"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Amount"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Date"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+
+        android:layout_marginBottom="8dp">
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+    <ListView
+        android:id="@+id/listView3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>
